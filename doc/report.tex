@@ -1,0 +1,681 @@
+\documentclass{article}
+
+\newcommand{\Title} {EasyMocap \textit{- AGI09}}
+\newcommand{\Author} {Irena Andonov, Arnaud Ramey - \{ireand18/ramey\}@kth.se}
+
+%%%%%%%%%% new packages
+\usepackage{graphicx}
+\interdisplaylinepenalty=2500
+\usepackage{array}
+\usepackage[font=small,format=plain,labelfont=bf,up,textfont=it,up]{caption} %legendes plus jolies
+\usepackage[font=footnotesize]{subfig}
+\usepackage{fixltx2e}
+\usepackage{url}
+\usepackage{multicol}
+
+\RequirePackage{amsfonts}
+\newcommand{\N} {\mathbb N}
+\newcommand{\R} {\mathbb R}
+\newcommand{\somme}[2] {\displaystyle\sum _{#1}^{#2}}
+\newcommand{\norme}[1] {\left\| #1 \right\|}
+\newcommand{\abs}[1] {\left| #1 \right|}
+\newcommand{\fn}[5] { #1: \begin{array} {ccc}#2 & \rightarrow & #3 \\ #4 & \mapsto & #5\end{array}}
+\newcommand{\V}[1] {\overrightarrow{#1}}        %vecteur
+\newcommand{\TODO}[1] {\textcolor{magenta}{TODO:#1}}        %vecteur
+
+\usepackage{fancyhdr}
+%\usepackage{savetrees}
+\usepackage{setspace}
+
+\usepackage[left=2cm,top=3cm,right=2cm, bottom=3cm]{geometry}
+\usepackage[scaled]{helvet} \renewcommand*\familydefault{\sfdefault} % police helvetica % Only if the base font of the document is to be sans serif
+
+
+
+% filename, height
+\newcommand{\imageWithoutFigure}[2] { \fbox {\imageWithoutFigureAndBox{#1}{#2} } }
+% filename, height
+\newcommand{\imageWithoutFigureAndBox}[2] { \includegraphics[height=#2 cm]{images/#1} }
+% content, caption label
+\newcommand{\Figure}[3] { \begin{figure}[!ht] \centering{#1} \caption{#2 \label{#3} } \end{figure} }
+% filename, height, caption, label
+\newcommand{\image}[4] { \Figure{\imageWithoutFigure{#1}{#2}} {#3} {#4} }
+% filename, height, caption, label
+\newcommand{\imageWithoutBox}[4] { \Figure{\imageWithoutFigureAndBox{#1}{#2}} {#3} {#4} }
+
+\usepackage{hyperref}
+\hypersetup{
+    unicode=false,          % non-Latin characters in Acrobat‚Äôs bookmarks
+    pdftoolbar=true,        % show Acrobat‚Äôs toolbar?
+    pdfmenubar=true,        % show Acrobat‚Äôs menu?
+    pdffitwindow=false,     % window fit to page when opened
+    pdfstartview={Fit},     % fits the width of the page to the window
+    pdftitle={\Title},   % title
+    pdfauthor={\Author},     % author
+    pdfsubject={\Title},   % subject of the document
+    pdfcreator={\Author},   % creator of the document
+    pdfproducer={Latex}, % producer of the document
+    pdfkeywords={\Title}, % list of keywords
+    pdfnewwindow=true,      % links in new window
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=red,          % color of internal links
+    citecolor=blue,        % color of links to bibliography
+    filecolor=magenta,      % color of file links
+    urlcolor=cyan           % color of external links
+}
+\usepackage{cite}
+
+
+\begin{document}
+
+
+\title{ \Title }
+\author { \Author }
+\date{January  2010}
+
+%%%% headers
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyhead[CO]  {\Title}
+\fancyfoot[CO]  {\Author}
+\fancyfoot[RO] {\thepage}
+\thispagestyle{empty}
+
+\maketitle
+
+\hrule
+\begin{abstract}
+    This report is about a project with EasyMocap and a computer animated figure.
+    EasyMocap is like Motion Capture, but with only one camera used.
+    By shooting an objects movement with a camera,  a file with the movements recorded is created.
+    Then the file is applied on the animated figure that will perform exactly the same movements.
+    The procedure how it is made possible is described, and also the results with images are presented here.
+\end{abstract}
+\hrule
+
+\vspace*{1 cm}
+\setcounter{tocdepth}{2}
+\begin{multicols}{2}{
+    \tableofcontents
+}
+\end{multicols}
+
+\setlength{\parskip}{3 mm}
+\setstretch{1.5}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagebreak
+\addcontentsline{toc}{section}{Introduction}
+    \section*{Introduction}
+The first motion to be captured and displayed in a sequence was made possible 1878, when Edward Muybridge photographed a galloping horse \cite{Muybridge}.
+He placed out cameras with self timer, that were triggered a millisecond after each other and photographed the horse.
+
+The method to 'capture motion' with camera has developed a lot, and one of the latest technologies is to record motions of an object with a camera and apply it on computer animated figures with a very similar structure as the object- at least the parts that are to be moved with this method.
+It is a method that is very distinguished from of the method of the pioneer of motion recording and displaying.
+
+Motion capture is commonly used in animated games and movies.
+It is a quite new technology and have made it possible to make computer animated figures perform motions that looks naturally.
+
+That would be very difficult and complicated to do with programming and the result wouldn't be as good as with the use of EasyMocap.
+
+We will explain how the Maya figure is built. We have used color markers and this will also be explained more thoroughly. Also how the code works, and at last - the results from making all this possible the cost of memory from executing it.
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \section{Purpose}
+The 3D-figure is built in Maya and transformed to OpenGL.
+We want to make the arms and legs move separately. We will have 10 separate body parts of our animated figure that are used in OpenGL. The arms and legs are split in upper and lower parts, and the torso will also be marked with an own color. Only the head wont be marked.
+
+We will use 5 different colors to mark an actors body part whose movements are filmed by a camera. We use only 5 colors because of the code that only recognize a certain range of RGB-components. This range for us is divided in 5 sections - that is red (255,0,0), blue (0,0,255), pink (255,0,255), yellow (255,255,0) and green (0,255,0). If we would use two colors whose RGB-components would be very close, they would not be perceived as two different colors by the code, but as one. So we have to be careful with that.
+
+The camera is connected to a C++ code, that is creating a file with the recorded movements.
+
+Every body part is marked with a different color so it can be recognized as a separate part by the code, like the upper arm and the forearm has to be two separate parts. We have 9 body parts to mark and 5 different colors, so we have to use four colors twice. We have to put the markers on the body of the actor so the same colors wont be to close and make a confusion of the code.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \section{General structure of the program}
+The idea is to make an actor move in front of a camera.
+He is equipped with \textbf{markers} on his body.
+These markers are in fact simple pieces of fabric, with a vivid color.
+We detect the position and orientation of these markers.
+By those means, we can "rebuild" the body and send the data of its movement
+to a computer generated figure.
+
+\begin{enumerate}
+    \item \textbf{Image analysis : } finding where the markers are on the video\\
+    The aim of this part is to extract the relevant portions of the image that
+    correspond to the members of the person doing the motion capture.
+    In input, we have a video recorded with a random camera.
+    In output, we have the orientation of every zone of pixels with a color matching the colors of the members.
+    This is an OpenCV \cite{OpenCV} program.
+
+    \item \textbf{Human body :} find the orientation on the actor on the video, according to the markers\\
+    We convert the information we extract from the video images
+    to compute the orientations of the human body.
+
+    \item \textbf{Representation of the body :} send the data about the orientation to the computer generated body\\
+    We send to the OpenGL animated body the orientation of the human body that we computed earlier.
+    Thus, we create an animation of a computer generated character, controlled by a real human in real time.
+    This is an OpenGL \cite{OpenGL} program.
+    How an OpenGL animated body is represented is explained in the part \ref{body_skeleton}.
+\end{enumerate}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \subsection{Structure of a body skeleton}
+\label{body_skeleton}
+At the beginning, we wanted to represent a 3D body
+(where the joint between 2 members would enable each of these two members to move in every direction).
+However, we chose to constrain ourselves to 2D moves. 2 principal reasons :
+\begin{enumerate}
+    \item Finding the orientation of the human body in 3D can be hard.
+    \item Making the computations for the absolute positions along a chain of members orientated in 3D
+    can be pretty hard.
+\end{enumerate}
+
+So, only moves in 2D are possible
+(for example, lifting the arms in the axes of the shoulders,
+or waving goodbye).
+
+A body is thus represented as a \textit{position} and a tree of \verb|Member|.
+
+The position is a 3D point. It gives the position of the center of mass of the body.
+
+A \verb|Member| is made of :
+\begin{itemize}
+    \item \textbf{a pointer to the "father" $f$}, that is the \verb|Member| which it is linked to.
+    For example,
+    the head is linked to the torso,
+    the left forearm is linked to the left arm, etc.
+    The torso is the "root" of this tree structure.
+
+    \item \textbf{The length of the member}.
+
+    \item \textbf{The abscissa of fixation on $f$}.
+    Thus, if it values 0, it means the member is fixated on the base of its father $f$,
+    if it values $\frac {f.length} 2$, it is on the middle of $f$
+    and if is $f.length$ it means the joint is at the end of the $f$ (the most common situation).
+
+    \item \textbf{The angle between $f$ and the current member}.
+    It is expressed on the coordinates relative to $f$ coordinates.
+    For example, if this angle values 0, it means $f$ and the member are aligned,
+    if it values $\frac \pi 2$ it means there is a right angle between both members.
+
+    \item \textbf{A pointer to the RTG file used to draw the member}.
+    In case no file is specified, the member will be drawn with a white orientated cylinder.
+\end{itemize}
+
+A representation of a human body is made on the figure \ref{fig:opengl_body}.
+
+\Figure
+    {
+        \imageWithoutFigure {opengl_body.png} 6
+        \imageWithoutFigure {opengl_gingy.png} 6
+    }
+    {On the left, an simple OpenGL computer generated body. This example is shaped as a human body.
+    On the right, a more elaborated OpenGL body. This one uses RTG files coming from Maya for its representation.}
+    {fig:opengl_body}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \subsection{The Maya models}
+We decided to make our own Gingy (from Shrek) in Maya. It has a human body structure so it works with EasyMocap where we want to use a human actor for the movements. It is built with primitive polygons and textured with assigning a material and a certain color on the polygons. Afterwards we placed the ten different body parts; the upper-arms, the forearms, the torso, the head, the shins and the down-legs separate on origin and made rtg-files of every part to use in OpenGL.
+
+You can see some screenshots of Gingy rendered in Maya on fig \ref{fig:gingy}.
+
+\Figure
+    {
+        \imageWithoutFigure {Gingy1.png} 6
+        \imageWithoutFigure {Gingy2.png} 6
+    }
+    {Snaphots of rendered Gingy in Maya..}
+    {fig:gingy}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \section{The algorithmic}
+We will present here some relevant steps from the algorithm.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \subsection{Color conversion : from RGB to HSV}
+
+\paragraph{RGB color mode}
+The images supplied by the camera are color images.
+The camera supplies them in a \textbf{RGB color mode}.
+It means the images are made of three layers : \textit{Red, Green, Blue}.
+Each layer is in fact an array of size $(w, h)$,
+where $w$ is the width of the image and $h$ its height,
+containing int numbers between $0$ and $255$.
+
+For instance, if a a pixel is made of the three components $(255, 0, 0)$,
+it is in a bright red color in the image.
+
+It could be possible to make filters on the RGB components of the image.
+However, these components are highly variable to light exposure and the brightness of the room.
+For instance, a purple sheet of paper successively brought from a bright ambiance to a dark one
+will see its RGB components change a lot.
+Thus, it is hard to define accurate filters which are robust to light variations.
+
+\paragraph{HSV color mode}
+That is the reason why we chose to convert the image in \textbf{HSV color mode}.
+HSV stands for \textit{Hue, Saturation, Value}.
+A further description of these three components can be found on Wikipedia \cite{WikiHSV}.
+In our representation, \textit{Hue} belongs to $[0, 360]$
+while \textit{Saturation} and \textit{Value} are in $[0, 255]$.
+What is important to keep in mind is that the color itself of a pixel is encoded in the Hue component,
+while its intensity is represented in the two others.
+
+Consequently, we can define accurate filters on colors by
+setting narrow \textit{Hue} filters, and loose \textit{Saturation} and \textit{Value} filters.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \subsection{Filtering the image}
+Now that we have converted the image of the camera in HSV color mode,
+we need to only keep in the image the pixels relevant to the color filters
+we defined.
+
+One color filter will only allow one of the colors we used for the fabrics.
+For instance, the \textit{Yellow} filter is defined by :
+\begin{itemize}
+ \item for \textit{Hue}, a minimal allowed value of 20 and a maximal value of 60
+ \item for \textit{Saturation}, a minimal allowed value of 150 and a maximal value of 255 (no upper limit)
+ \item for \textit{Value}, a minimal allowed value of 100 and a maximal value of 255 (idem)
+\end{itemize}
+
+These values have to be calibrated by hand at the beginning of the use of the program.
+However, as we explained before, they are more or less independent of the lightning conditions.
+
+Here is a bit more in detail what we want to do.
+We consider we have a 1 channel output image $out$,
+which has the same dimensions as the image of the camera
+and is initially black.
+We consider a pixel of coordinates $(x, y) \in \N^2$
+and of HSV components $(h, s, v) \in [0, 360] \times [0, 255]^2$.
+Our purpose is that, if $(h, s, v)$ belongs to the values allowed by one of the filter,
+say the filter with index $i$,
+then $out(x, y) = i$.
+
+            \subsubsection{First method : manual filtering}
+
+The first method is to scan the HSV image, that means to read the \textit{Hue, Saturation, Value}
+components of each pixel thanks to iterators.
+So, for every pixel $(x, y)$,
+we see if its components match one of the filters.
+If it is the case, we change $out(x, y)$ to the filter index.
+
+In pseudo code, this algorithm is written :
+\hrule
+\begin{verbatim}
+function HSV(Image input, filters F)
+    clear out
+    init H, S, V to the values of input(0,0)
+    for y : 0 -> input.h
+    for x : 0 -> input.w
+        for each filter f in F
+        if (H, S, V) matches f
+            out(x, y) = f.index
+            break
+    increment H, S, V
+    return out
+\end{verbatim}
+\hrule\vspace*{.5 cm}
+
+
+            \subsubsection{Second method : OpenCV filtering}
+
+In the first method, we were filtering "by ourself" the input image
+with a \textit{if / else} structure.
+
+We can also use OpenCV primitives.
+For instance, using thresholds, it is easy to filter a one channel image :
+you allow the interval of possible values,
+and every value outside this interval will be turned to 0.
+
+The idea is then to split our 3-channels HSV image into three separate one-channel images.
+Then you apply the corresponding filter on each one of the layers
+and get the total filter by applying a boolean AND
+on the three images.
+
+In pseudo code, this algorithm is written :
+\hrule
+\begin{verbatim}
+function HSV2(Image input, filters F)
+    clear out
+    split input in H_layer, S_layer, V_layer
+    for each filter f in F
+        H_filtered = minmax_filter (H_layer, f.Hmin, f.Hmax)
+        S_filtered = minmax_filter (S_layer, f.Smin, f.Smax)
+        V_filtered = minmax_filter (V_layer, f.Vmin, f.Vmax)
+        H_filtered = and (H_filtered, S_filtered, V_filtered)
+        out = max (out, H_filtered)
+    return out
+\end{verbatim}
+\hrule\vspace*{.5 cm}
+
+            \subsubsection{Comparison}
+
+The output images given by the 2 methods are, as we could foresee, strictly identical.
+However, the time performances are different.
+
+We could expect method 1 to be faster, as it only requires going through the whole image once.
+However, after benchmarking on a wide set of images, that method 2 was around 60\% faster.
+
+We think this is due to the fact that OpenCV primitives are highly optimized to go fast
+(basic operators on image), and going manually and iteratively through an image
+does not benefit from the same degree of optimization.
+
+So, \textbf{method 2 is the method used in the program.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \subsection{Finding components : Union Find using the Disjoint-Sets data structure}
+\label{part_disjoint_sets}
+Now that we have filtered the image, we need to find which pixels correspond to the color markers.
+We have to do a theoretical interlude.
+
+We consider a set of points $P = \left\{ p=(x, y) \in \N^2 \right\} \in \N^{2\N}$. In fact, these points represent the non null points of an image.
+
+\label{def_connected_component}
+A \textbf{connected component} of $P$ is a subset $C$ of $P$ points such as
+$$\forall c \in C, \exists \tilde c \in C,
+\norme{ c - \tilde c }_{L_1} =
+\max{}{ \abs{c.x - \tilde c.x}, \abs{c.y - \tilde c.y} } = 1$$
+
+That corresponds to the usual definition of connected components for non-oriented graphs,
+supposing that two points at an euclidean distance of $1$ on $P$ are two linked nodes in the corresponding graph. This equivalence is illustrated in figure \ref{img_components_similitude}.
+
+\image{disjointSets/components_similitude.png} 7 {Illustration of the correspondence between connected components in images and graphs} {img_components_similitude}
+
+Now, we look for a quick way to find every connected component of $P$.
+More accurately, it is to obtain a partition $\left\{ P_i , 1 \leq i \leq n \right\}$ of $P$, where $n$ is the number of connected components of $P$ and $\forall i \in [1; n],\; P_i$ is a connected component.
+This is illustrated in figure \ref{img_components_extraction}.
+There are many ways to make it, we chose to use the \textbf{Union-Find} algorithm with the \textbf{Disjoint-Sets} data structure.
+
+\image{disjointSets/components_extraction.png} 7 {The objective of this part is to extract the components.
+Above, the original image : each non-black point represents a point of $P$.
+Under are the connected components $\left\{ P_i \right\}$. Each component has been drawn in a different color.} {img_components_extraction}
+
+\paragraph{Disjoint sets}
+The disjoint-sets data structure was first presented in \cite{Galler} in 1964.
+A set is a structure of tree, in which each node has a reference to his father (while it is references to his sons in the classic tree structure).
+A disjoint-set forest is a list of sets.
+
+\paragraph{Union Find}
+A union-find algorithm supplies a disjoint-set forest two functions : \verb|union| and \verb|find|. The former allows the fusion of two sets, while the latter finds the root of the tree in which is located the supplied argument.
+
+\subparagraph{Basic implementation :}
+A simple implementation would be :
+\hrule
+\begin{verbatim}
+function Find(Set A)
+    Set F = A;
+    while F.father != F
+        F = F.father;
+    return F;
+
+function Union(Set A, Set B)
+    Set FA = Find (A);
+    Set FB = Find (B);
+    FB.father = FA;
+\end{verbatim}
+\hrule\vspace*{.5 cm}
+
+This is visually illustrated on image \ref{img_union-find_simple}.
+
+\image{disjointSets/union-find_simple.png} {8} {Illustration of the basic implementation of the two functions $Find$ and $Union$ with an example disjoint-set forest.} {img_union-find_simple}
+
+
+\subparagraph{Improved implementation :}
+Two improvements are usually made when using the Union Find algorithm. Both of them are aimed to shorten the height of the trees in the disjoint-set forest.
+
+The first one, called \textit{Path Compression}, is to modify the function \verb|Find|.
+For instance, if a call of \verb|Find(A)| returns \verb|F|, then the improved function will connect directly to \verb|F| each node in the path from \verb|A| to \verb|F|.
+In pseudo-code, this would be written :
+
+\hrule
+\begin{verbatim}
+function Find(Set A)
+    Set F = A;
+    while F.father != F
+        F = F.father;
+    // now update the fathers
+    Set B = A, C;
+    while B != F
+        C = B.father;
+        B.father = F;
+        B = C;
+\end{verbatim}
+\hrule\vspace*{.5 cm}
+
+The second one usually made is called \textit{Union by Rank}.
+The idea is to always attach the smaller tree to the root of the larger tree, rather than always the first one.
+However, in our case (to find connected components), it is of primordial importance to always attach the current node to the node which has a smaller $y$-coordinate.
+Actually, we add a heuristic \verb|index = y * width + x| to the components of the node : thus, the \verb|Union| function will always link the higher-index node to the lower-index one.
+
+\hrule
+\begin{verbatim}
+function Union(Set A, Set B)
+    Set FA = Find (A);
+    Set FB = Find (B);
+    if FB.index > FA.index
+        FB.father = FA;
+    else
+        FA.father = FB;
+\end{verbatim}
+\hrule\vspace*{.5 cm}
+
+
+The two improvements are illustrated on image \ref{img_union-find_complex}.
+\image{disjointSets/union-find_complex.png} {9} {
+    Illustration of the improved implementation of the same example than in figure \ref{img_union-find_simple}.
+    We can notice that $Find$ has now modified the path between the searched node and its father.
+    Moreover, $Union$ now defines as root the node with the lowest index.
+} {img_union-find_complex}
+
+
+\paragraph{The algorithm} Now that we are more familiar with disjoint-sets forests and Union-Find algorithms, we can give a pseudo-code version of the algorithm.
+\pagebreak
+\hrule
+\begin{verbatim}
+function FindComponents( List of point P, int width, int height )
+  // computing the disjoint set
+  for each p = (x, y) in P
+    create Node (x,y)
+
+  for int y = 0 to height
+    for int x = 0 to width
+      Node curr = Node (x, y);
+      Node up = Node (x, y-1);
+      Node left = Node (x-1, y);
+
+      if x > 0 and y > 0 and exists up and exists left
+        Union (up, curr);
+        Union (left, curr);
+      else if x > 0 and exists left
+        Union (left, curr);
+      else if y > 0 and exists up
+        Union (up, curr);
+
+   // now create the lists
+  create A, an array of size width * height of blank point lists;
+
+  for int y = 0 to height
+    for int x = 0 to width
+      Node curr = Node (x,y);
+      add (x,y) at A[curr.father];
+
+   // now collect the results
+  create R, a list of list of points;
+  for int y = 0 to height
+    for int x = 0 to width
+      if A[y * width + x] is not empty
+        add A[y * width + x] to R;
+  return R;
+\end{verbatim}
+\hrule\vspace*{.5 cm}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \subsection{Transforming a component into an oriented box}
+
+We consider the following problem :
+we have a point set standing for a connected component in our image,
+and we want to find the circumscribed rectangle of minimal area for this given 2D point set.
+
+A simple solution can be to compute the bounding box for the set of points.
+However, first we are not sure it will be the minimal area rectangle,
+and then it would be constraining the problem by asking this box to have
+horizontal and vertical borders (that means an angle equal to 0 or 90 degrees√†).
+
+We found a solution by using a function integrated in the OpenCV library :
+we use the function \verb|cvMinAreaRect2()|.
+It returns the minimal rectangle that will bound the set,
+and this rectangle may be inclined relative to the vertical.
+This is illustrated on fig \ref{fig:box2D}.
+
+\image
+    {box2D.png}{6}
+    {On the left, the bounding box of a set of points.
+    On the right, the orientated box of the same set of points. As we can see, it fits better the structure of the list of points.}
+    {fig:box2D}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \section{Results}
+
+
+
+The program was benchmarked on the following computer :
+\begin{itemize}
+    \item \textbf{CPU:} Intel Core 2 Duo CPU P8600 @ 2.40GHz
+    \item \textbf{GPU:} nVidia Corporation G98 [GeForce 9200M GS]
+    \item \textbf{RAM:} 4 GiB RAM
+    \item \textbf{Input images :} VGA images (640x480x24 bits, with a JPEG compression)
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \subsection{Samples}
+We chose to bound ourselves to the use of the upper members only for the tests.
+However, our code must be working for a full body.
+
+We couldnt manage to fix the problem with UV-texturing our mayamodel. Something wasnt working right when we wanted to put a png-file on the UV-mapped components of the polygons. Thats why we decided the last day before the demonstration that we needed to test our Maya-model in OpenGL and gave it several materials with colors.
+
+You can see some illustrations in fig \ref{fig:phases}.
+
+\Figure
+    {
+        \imageWithoutFigure {program/in.png} 6
+        \imageWithoutFigure {program/rgb.png} 6
+        \imageWithoutFigure {program/out.png} 6
+        \imageWithoutFigure {program/illus.png} 6
+    }
+    {
+    Upper left, the input image.
+    Upper right, the Hue component of the image (with S and V at their maximum).
+    Lower left, the filtered image.
+    Lower right, an image where we only keep the relevant components.}
+    {fig:phases}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \subsection{Time costs}
+The analysis of an image and its rendering time are usually 60 milliseconds.
+They are split into the following way :
+\begin{tabular}{r | l}
+Type    &       Time (ms) \\ \hline
+HSV conversion  & 5 \\
+Filtering image & 4  \\
+All connected components        & 13 \\
+Biggest connected components    & 9 \\
+Computing orientated boxes      & 7  \\
+OpenCV image display and OpenGL rendering       & 33 \\
+\end{tabular}
+
+This is illustrated on fig \ref{fig:time_diag}.
+
+\image
+    {times.png}{6}
+    {Diagram of time consumption of the different steps.}
+    {fig:time_diag}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \section{How to use the program}
+
+        \subsection{How to build the program}
+It is easy to build the program on a Unix computer.
+You need the following libraries before compiling :
+OpenCV \cite{OpenCV},
+OpenGL \cite{OpenGL},
+make.
+
+        \subsubsection{How to use the program}
+To display the help, just launch in a terminal \verb|./easy_mocap.exe -h|.
+It will display the help of the program.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\addcontentsline{toc}{section}{Conclusion}
+    \section*{Conclusion}
+
+We managed to develop a motion capture program that works in real time with one camera.
+
+It was quite hard to obtain a version that was working fast enough to accept a real time version, but we got it.
+We learned quite a lot about the methods to optimize a code.
+On the other hand, we made some sacrifices with the complexity of the problem :
+we bound ourselves to 2D moves and to the upper members of the body.
+
+This project was an interesting deepening experience in the world of OpenGL and Maya.
+It was also the occasion for us to bind them with OpenCV, the computer vision library.
+
+\pagebreak
+% \vspace*{3 cm}
+\addcontentsline{toc}{section}{References}
+\begin{thebibliography}{99}
+\bibitem[Galler]{Galler}
+    Bernard A. Galler and Michael J. Fischer, "An improved equivalence algorithm",
+    {\it Communications of the ACM}, Volume 7, Issue 5 (May 1964), p301-303 ; 1964.
+
+\bibitem[WikiHSV]{WikiHSV}
+    \href{http://en.wikipedia.org/wiki/HSL\_and\_HSV}{http://en.wikipedia.org/wiki/HSL\_and\_HSV}
+
+\bibitem[Muybridge]{Muybridge}
+    \href{http://www.associatedcontent.com/article/461209/the\_first\_movie\_ever\_made\_a\_history.html?cat=37}
+    {http://www.associatedcontent.com/article/461209/the\_first\_movie\_ever\_made\_a\_history.html?cat=37}
+
+\bibitem[OpenCV]{OpenCV}
+    \href{http://opencv.willowgarage.com/wiki/} {http://opencv.willowgarage.com/wiki/}
+
+\bibitem[OpenGL]{OpenGL}
+    \href{http://www.opengl.org/} {http://www.opengl.org/}
+
+\end{thebibliography}
+
+% \end{large}
+\end{document}
+
+
+

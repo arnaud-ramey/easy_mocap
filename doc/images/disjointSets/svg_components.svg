@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   sodipodi:docname="svg_drawings.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_extraction.png"
+   inkscape:export-xdpi="100"
+   inkscape:export-ydpi="100">
+  <defs
+     id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective10" />
+    <inkscape:perspective
+       id="perspective2485"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     gridtolerance="10000"
+     guidetolerance="10"
+     objecttolerance="10"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.90509668"
+     inkscape:cx="-597.83792"
+     inkscape:cy="454.53881"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:window-width="1308"
+     inkscape:window-height="767"
+     inkscape:window-x="0"
+     inkscape:window-y="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3349"
+       visible="true"
+       enabled="true"
+       spacingx="20px"
+       spacingy="20px" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       y="312.36218"
+       x="540"
+       height="80"
+       width="20"
+       id="rect2439"
+       style="fill:#000080;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_similitude.png"
+       inkscape:export-xdpi="133.33"
+       inkscape:export-ydpi="133.33" />
+    <rect
+       inkscape:transform-center-y="8"
+       transform="matrix(0,1,-1,0,0,0)"
+       style="fill:#000080;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2435"
+       width="20"
+       height="80"
+       x="392.36218"
+       y="-540"
+       inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_similitude.png"
+       inkscape:export-xdpi="133.33"
+       inkscape:export-ydpi="133.33" />
+    <rect
+       style="fill:#000080;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2433"
+       width="20"
+       height="80"
+       x="240"
+       y="312.36218"
+       inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_similitude.png"
+       inkscape:export-xdpi="133.33"
+       inkscape:export-ydpi="133.33" />
+    <rect
+       transform="matrix(0,1,-1,0,0,0)"
+       style="fill:#000080;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2425"
+       width="20"
+       height="80"
+       x="290.36218"
+       y="-340"
+       inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_similitude.png"
+       inkscape:export-xdpi="133.33"
+       inkscape:export-ydpi="133.33" />
+    <rect
+       y="212.36218"
+       x="240"
+       height="80"
+       width="20"
+       id="rect2429"
+       style="fill:#000080;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_similitude.png"
+       inkscape:export-xdpi="133.33"
+       inkscape:export-ydpi="133.33" />
+    <rect
+       y="-340"
+       x="290.36218"
+       height="80"
+       width="20"
+       id="rect2427"
+       style="fill:#000080;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(0,1,-1,0,0,0)"
+       inkscape:transform-center-y="8"
+       inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_similitude.png"
+       inkscape:export-xdpi="133.33"
+       inkscape:export-ydpi="133.33" />
+    <rect
+       style="fill:#000080;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2431"
+       width="20"
+       height="80"
+       x="340"
+       y="212.36218"
+       inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_similitude.png"
+       inkscape:export-xdpi="133.33"
+       inkscape:export-ydpi="133.33" />
+    <rect
+       y="-340"
+       x="192.36218"
+       height="80"
+       width="20"
+       id="rect2423"
+       style="fill:#000080;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(0,1,-1,0,0,0)"
+       inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_similitude.png"
+       inkscape:export-xdpi="133.33"
+       inkscape:export-ydpi="133.33" />
+    <rect
+       style="fill:#000080;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3447"
+       width="20"
+       height="80"
+       x="240"
+       y="112.36218"
+       inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_similitude.png"
+       inkscape:export-xdpi="133.33"
+       inkscape:export-ydpi="133.33" />
+    <rect
+       style="fill:#00ff00;fill-opacity:1;stroke:#000000;stroke-width:4.14613533;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3307"
+       width="97.114563"
+       height="97.114563"
+       x="500.2406"
+       y="892.60278"
+       inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_similitude.png"
+       inkscape:export-xdpi="133.33"
+       inkscape:export-ydpi="133.33" />
+    <rect
+       y="-540"
+       x="392.36218"
+       height="80"
+       width="20"
+       id="rect2437"
+       style="fill:#000080;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(0,1,-1,0,0,0)"
+       inkscape:transform-center-y="8"
+       inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_similitude.png"
+       inkscape:export-xdpi="133.33"
+       inkscape:export-ydpi="133.33" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#00ff00;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path3351"
+       sodipodi:cx="-150"
+       sodipodi:cy="142.36218"
+       sodipodi:rx="30"
+       sodipodi:ry="30"
+       d="M -120,142.36218 A 30,30 0 1 1 -180,142.36218 A 30,30 0 1 1 -120,142.36218 z"
+       transform="matrix(0.9623016,0,0,0.9561136,692.55164,263.2302)"
+       inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_similitude.png"
+       inkscape:export-xdpi="133.33"
+       inkscape:export-ydpi="133.33" />
+    <rect
+       y="892.60278"
+       x="400.97992"
+       height="97.114563"
+       width="97.114563"
+       id="rect3359"
+       style="fill:#00ff00;fill-opacity:1;stroke:#000000;stroke-width:4.14613533;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_similitude.png"
+       inkscape:export-xdpi="133.33"
+       inkscape:export-ydpi="133.33" />
+    <path
+       transform="matrix(0.9623016,0,0,0.9561136,593.29095,263.2302)"
+       d="M -120,142.36218 A 30,30 0 1 1 -180,142.36218 A 30,30 0 1 1 -120,142.36218 z"
+       sodipodi:ry="30"
+       sodipodi:rx="30"
+       sodipodi:cy="142.36218"
+       sodipodi:cx="-150"
+       id="path3361"
+       style="fill:#00ff00;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       sodipodi:type="arc"
+       inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_similitude.png"
+       inkscape:export-xdpi="133.33"
+       inkscape:export-ydpi="133.33" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:4.14613533;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3365"
+       width="97.114563"
+       height="97.114563"
+       x="301.71921"
+       y="892.60278"
+       inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_similitude.png"
+       inkscape:export-xdpi="133.33"
+       inkscape:export-ydpi="133.33" />
+    <rect
+       y="892.60278"
+       x="202.45851"
+       height="97.114563"
+       width="97.114563"
+       id="rect3371"
+       style="fill:#00ff00;fill-opacity:1;stroke:#000000;stroke-width:4.14613533;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_similitude.png"
+       inkscape:export-xdpi="133.33"
+       inkscape:export-ydpi="133.33" />
+    <path
+       transform="matrix(0.9623016,0,0,0.9561136,394.76955,263.2302)"
+       d="M -120,142.36218 A 30,30 0 1 1 -180,142.36218 A 30,30 0 1 1 -120,142.36218 z"
+       sodipodi:ry="30"
+       sodipodi:rx="30"
+       sodipodi:cy="142.36218"
+       sodipodi:cx="-150"
+       id="path3373"
+       style="fill:#00ff00;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       sodipodi:type="arc"
+       inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_similitude.png"
+       inkscape:export-xdpi="133.33"
+       inkscape:export-ydpi="133.33" />
+    <rect
+       y="793.34204"
+       x="500.2406"
+       height="97.114563"
+       width="97.114563"
+       id="rect3377"
+       style="fill:#00ff00;fill-opacity:1;stroke:#000000;stroke-width:4.14613533;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_similitude.png"
+       inkscape:export-xdpi="133.33"
+       inkscape:export-ydpi="133.33" />
+    <path
+       transform="matrix(0.9623016,0,0,0.9561136,692.55164,163.96951)"
+       d="M -120,142.36218 A 30,30 0 1 1 -180,142.36218 A 30,30 0 1 1 -120,142.36218 z"
+       sodipodi:ry="30"
+       sodipodi:rx="30"
+       sodipodi:cy="142.36218"
+       sodipodi:cx="-150"
+       id="path3379"
+       style="fill:#00ff00;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       sodipodi:type="arc"
+       inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_similitude.png"
+       inkscape:export-xdpi="133.33"
+       inkscape:export-ydpi="133.33" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:4.14613533;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3383"
+       width="97.114563"
+       height="97.114563"
+       x="400.97992"
+       y="793.34204"
+       inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_similitude.png"
+       inkscape:export-xdpi="133.33"
+       inkscape:export-ydpi="133.33" />
+    <rect
+       y="793.34204"
+       x="301.71921"
+       height="97.114563"
+       width="97.114563"
+       id="rect3389"
+       style="fill:#00ff00;fill-opacity:1;stroke:#000000;stroke-width:4.14613533;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_similitude.png"
+       inkscape:export-xdpi="133.33"
+       inkscape:export-ydpi="133.33" />
+    <path
+       transform="matrix(0.9623016,0,0,0.9561136,494.03025,163.96951)"
+       d="M -120,142.36218 A 30,30 0 1 1 -180,142.36218 A 30,30 0 1 1 -120,142.36218 z"
+       sodipodi:ry="30"
+       sodipodi:rx="30"
+       sodipodi:cy="142.36218"
+       sodipodi:cx="-150"
+       id="path3391"
+       style="fill:#00ff00;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       sodipodi:type="arc"
+       inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_similitude.png"
+       inkscape:export-xdpi="133.33"
+       inkscape:export-ydpi="133.33" />
+    <rect
+       style="fill:#00ff00;fill-opacity:1;stroke:#000000;stroke-width:4.14613533;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3395"
+       width="97.114563"
+       height="97.114563"
+       x="202.45851"
+       y="793.34204"
+       inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_similitude.png"
+       inkscape:export-xdpi="133.33"
+       inkscape:export-ydpi="133.33" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#00ff00;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path3397"
+       sodipodi:cx="-150"
+       sodipodi:cy="142.36218"
+       sodipodi:rx="30"
+       sodipodi:ry="30"
+       d="M -120,142.36218 A 30,30 0 1 1 -180,142.36218 A 30,30 0 1 1 -120,142.36218 z"
+       transform="matrix(0.9623016,0,0,0.9561136,394.76955,163.96951)"
+       inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_similitude.png"
+       inkscape:export-xdpi="133.33"
+       inkscape:export-ydpi="133.33" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:4.14613533;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3401"
+       width="97.114563"
+       height="97.114563"
+       x="500.2406"
+       y="694.08136"
+       inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_similitude.png"
+       inkscape:export-xdpi="133.33"
+       inkscape:export-ydpi="133.33" />
+    <rect
+       y="694.08136"
+       x="400.97992"
+       height="97.114563"
+       width="97.114563"
+       id="rect3407"
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:4.14613533;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_similitude.png"
+       inkscape:export-xdpi="133.33"
+       inkscape:export-ydpi="133.33" />
+    <rect
+       style="fill:#00ff00;fill-opacity:1;stroke:#000000;stroke-width:4.14613533;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3413"
+       width="97.114563"
+       height="97.114563"
+       x="301.71921"
+       y="694.08136"
+       inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_similitude.png"
+       inkscape:export-xdpi="133.33"
+       inkscape:export-ydpi="133.33" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#00ff00;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path3415"
+       sodipodi:cx="-150"
+       sodipodi:cy="142.36218"
+       sodipodi:rx="30"
+       sodipodi:ry="30"
+       d="M -120,142.36218 A 30,30 0 1 1 -180,142.36218 A 30,30 0 1 1 -120,142.36218 z"
+       transform="matrix(0.9623016,0,0,0.9561136,494.03025,64.708812)"
+       inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_similitude.png"
+       inkscape:export-xdpi="133.33"
+       inkscape:export-ydpi="133.33" />
+    <rect
+       y="694.08136"
+       x="202.45851"
+       height="97.114563"
+       width="97.114563"
+       id="rect3419"
+       style="fill:#00ff00;fill-opacity:1;stroke:#000000;stroke-width:4.14613533;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_similitude.png"
+       inkscape:export-xdpi="133.33"
+       inkscape:export-ydpi="133.33" />
+    <path
+       transform="matrix(0.9623016,0,0,0.9561136,394.76955,64.708812)"
+       d="M -120,142.36218 A 30,30 0 1 1 -180,142.36218 A 30,30 0 1 1 -120,142.36218 z"
+       sodipodi:ry="30"
+       sodipodi:rx="30"
+       sodipodi:cy="142.36218"
+       sodipodi:cx="-150"
+       id="path3421"
+       style="fill:#00ff00;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       sodipodi:type="arc"
+       inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_similitude.png"
+       inkscape:export-xdpi="133.33"
+       inkscape:export-ydpi="133.33" />
+    <rect
+       y="594.82068"
+       x="500.2406"
+       height="97.114563"
+       width="97.114563"
+       id="rect3425"
+       style="fill:#00ff00;fill-opacity:1;stroke:#000000;stroke-width:4.14613533;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_similitude.png"
+       inkscape:export-xdpi="133.33"
+       inkscape:export-ydpi="133.33" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:4.14613533;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3431"
+       width="97.114563"
+       height="97.114563"
+       x="400.97992"
+       y="594.82068"
+       inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_similitude.png"
+       inkscape:export-xdpi="133.33"
+       inkscape:export-ydpi="133.33" />
+    <rect
+       y="594.82068"
+       x="301.71921"
+       height="97.114563"
+       width="97.114563"
+       id="rect3437"
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:4.14613533;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_similitude.png"
+       inkscape:export-xdpi="133.33"
+       inkscape:export-ydpi="133.33" />
+    <rect
+       style="fill:#00ff00;fill-opacity:1;stroke:#000000;stroke-width:4.14613533;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3443"
+       width="97.114563"
+       height="97.114563"
+       x="202.45851"
+       y="594.82068"
+       inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_similitude.png"
+       inkscape:export-xdpi="133.33"
+       inkscape:export-ydpi="133.33" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#00ff00;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path3445"
+       sodipodi:cx="-150"
+       sodipodi:cy="142.36218"
+       sodipodi:rx="30"
+       sodipodi:ry="30"
+       d="M -120,142.36218 A 30,30 0 1 1 -180,142.36218 A 30,30 0 1 1 -120,142.36218 z"
+       transform="matrix(0.9623016,0,0,0.9561136,394.76955,-34.551886)"
+       inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_similitude.png"
+       inkscape:export-xdpi="133.33"
+       inkscape:export-ydpi="133.33" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#00ff00;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path2441"
+       sodipodi:cx="-150"
+       sodipodi:cy="142.36218"
+       sodipodi:rx="30"
+       sodipodi:ry="30"
+       d="M -120,142.36218 A 30,30 0 1 1 -180,142.36218 A 30,30 0 1 1 -120,142.36218 z"
+       transform="matrix(0.9623016,0,0,0.9561136,692.55164,-36.03049)"
+       inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_similitude.png"
+       inkscape:export-xdpi="133.33"
+       inkscape:export-ydpi="133.33" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2443"
+       width="400"
+       height="400"
+       x="200"
+       y="52.362183"
+       inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_similitude.png"
+       inkscape:export-xdpi="133.33"
+       inkscape:export-ydpi="133.33" />
+    <g
+       id="g3221"
+       transform="translate(969.6367,119.83346)"
+       inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_similitude.png"
+       inkscape:export-xdpi="133.33"
+       inkscape:export-ydpi="133.33">
+      <path
+         transform="matrix(0.3312162,0,0,0.1936409,-357.65833,282.818)"
+         d="M -640,360 L -591.34575,444.27164 L -542.6915,528.54328 L -640,528.54327 L -737.30851,528.54327 L -688.65425,444.27164 L -640,360 z"
+         inkscape:randomized="0"
+         inkscape:rounded="0"
+         inkscape:flatsided="false"
+         sodipodi:arg2="-0.52359878"
+         sodipodi:arg1="-1.5707963"
+         sodipodi:r2="56.181091"
+         sodipodi:r1="112.36218"
+         sodipodi:cy="472.36218"
+         sodipodi:cx="-640"
+         sodipodi:sides="3"
+         id="path3215"
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         sodipodi:type="star" />
+      <rect
+         y="378.39029"
+         x="-581.92102"
+         height="52.682144"
+         width="26.341072"
+         id="rect3217"
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.64631701;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         sodipodi:type="star"
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path3219"
+         sodipodi:sides="3"
+         sodipodi:cx="-640"
+         sodipodi:cy="472.36218"
+         sodipodi:r1="112.36218"
+         sodipodi:r2="56.181091"
+         sodipodi:arg1="-1.5707963"
+         sodipodi:arg2="-0.52359878"
+         inkscape:flatsided="false"
+         inkscape:rounded="0"
+         inkscape:randomized="0"
+         d="M -640,360 L -591.34575,444.27164 L -542.6915,528.54328 L -640,528.54327 L -737.30851,528.54327 L -688.65425,444.27164 L -640,360 z"
+         transform="matrix(0.3312162,0,0,-0.1936409,-357.65833,527.97279)" />
+    </g>
+    <rect
+       style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2491"
+       width="340"
+       height="200"
+       x="-900"
+       y="392.36218"
+       inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_extraction.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
+    <path
+       sodipodi:type="star"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path2495"
+       sodipodi:sides="5"
+       sodipodi:cx="-860"
+       sodipodi:cy="472.36218"
+       sodipodi:r1="51.452026"
+       sodipodi:r2="25.726013"
+       sodipodi:arg1="-0.68023768"
+       sodipodi:arg2="-0.051919149"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="M -820,440 L -834.30865,471.02711 L -816.86105,500.40398 L -850.79121,496.38355 L -873.33867,522.05515 L -880,488.54327 L -911.38269,475.03233 L -881.56947,458.34128 L -878.41759,424.31946 L -853.33067,447.5157 L -820,440 z"
+       transform="translate(33.330667,-15.153516)"
+       inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_extraction.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:4.92067814;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path2497"
+       sodipodi:cx="-770"
+       sodipodi:cy="532.36218"
+       sodipodi:rx="50"
+       sodipodi:ry="40"
+       d="M -720,532.36218 A 50,40 0 1 1 -820,532.36218 A 50,40 0 1 1 -720,532.36218 z"
+       transform="matrix(0.896,0,0,0.7375,-95.28,149.24507)"
+       inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_extraction.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3269"
+       width="79.199997"
+       height="100"
+       x="-780"
+       y="452.36218"
+       inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_extraction.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:2.58823252;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path3271"
+       sodipodi:cx="-710"
+       sodipodi:cy="482.36218"
+       sodipodi:rx="10"
+       sodipodi:ry="10"
+       d="M -700,482.36218 A 10,10 0 1 1 -720,482.36218 A 10,10 0 1 1 -700,482.36218 z"
+       transform="matrix(1.5454562,0,0,-1.5454562,352.72846,1237.8318)"
+       inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_extraction.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
+    <path
+       sodipodi:type="spiral"
+       style="fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:1.71052325;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path3273"
+       sodipodi:cx="-640"
+       sodipodi:cy="452.36218"
+       sodipodi:expansion="1"
+       sodipodi:revolution="3"
+       sodipodi:radius="34.115231"
+       sodipodi:argument="-17.90518"
+       sodipodi:t0="0"
+       d="M -640,452.36218 C -638.99723,453.7479 -641.37319,454.39756 -642.30315,454.02885 C -644.8233,453.02967 -644.70673,449.61518 -643.33333,447.75588 C -640.87665,444.43004 -635.93894,444.78594 -633.09055,447.36218 C -628.91042,451.14292 -629.5302,457.78036 -633.33333,461.57479 C -638.40231,466.63216 -646.79093,465.73623 -651.51576,460.69552 C -657.46147,454.3523 -656.2839,444.19098 -650,438.54328 C -642.38936,431.70315 -630.44426,433.16516 -623.87794,440.69551 C -616.13977,449.56978 -617.8878,463.30512 -626.66666,470.78739 C -636.80221,479.42597 -652.33191,477.39093 -660.72836,467.36219 C -670.26894,455.96689 -667.94625,438.64005 -656.66667,429.33067 C -644.01268,418.88695 -624.88674,421.49773 -614.66534,434.02884 C -603.31764,447.94076 -606.21683,468.86725 -620,480"
+       transform="matrix(-1.7461018,0,0,1.7616314,-1742.5816,-313.22088)"
+       inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_extraction.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M -660,572.36218 L -620,412.36218"
+       id="path3275"
+       inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_extraction.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
+    <rect
+       y="652.86224"
+       x="-899.59991"
+       height="200"
+       width="340"
+       id="rect3291"
+       style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_extraction.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
+    <path
+       transform="translate(33.73067,245.34651)"
+       d="M -820,440 L -834.30865,471.02711 L -816.86105,500.40398 L -850.79121,496.38355 L -873.33867,522.05515 L -880,488.54327 L -911.38269,475.03233 L -881.56947,458.34128 L -878.41759,424.31946 L -853.33067,447.5157 L -820,440 z"
+       inkscape:randomized="0"
+       inkscape:rounded="0"
+       inkscape:flatsided="false"
+       sodipodi:arg2="-0.051919149"
+       sodipodi:arg1="-0.68023768"
+       sodipodi:r2="25.726013"
+       sodipodi:r1="51.452026"
+       sodipodi:cy="472.36218"
+       sodipodi:cx="-860"
+       sodipodi:sides="5"
+       id="path3293"
+       style="opacity:1;fill:#ffff00;fill-opacity:1;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       sodipodi:type="star"
+       inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_extraction.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
+    <path
+       transform="matrix(0.896,0,0,0.7375,-94.88,409.74507)"
+       d="M -720,532.36218 A 50,40 0 1 1 -820,532.36218 A 50,40 0 1 1 -720,532.36218 z"
+       sodipodi:ry="40"
+       sodipodi:rx="50"
+       sodipodi:cy="532.36218"
+       sodipodi:cx="-770"
+       id="path3295"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#00ff00;stroke-width:4.92067814;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       sodipodi:type="arc"
+       inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_extraction.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
+    <rect
+       y="712.86224"
+       x="-779.59991"
+       height="100"
+       width="79.199997"
+       id="rect3297"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#00ff00;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_extraction.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
+    <path
+       transform="matrix(1.5454562,0,0,-1.5454562,353.12846,1498.3322)"
+       d="M -700,482.36218 A 10,10 0 1 1 -720,482.36218 A 10,10 0 1 1 -700,482.36218 z"
+       sodipodi:ry="10"
+       sodipodi:rx="10"
+       sodipodi:cy="482.36218"
+       sodipodi:cx="-710"
+       id="path3299"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#ee00ee;stroke-width:2.58823252;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       sodipodi:type="arc"
+       inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_extraction.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
+    <path
+       transform="matrix(-1.7461018,0,0,1.7616314,-1742.1812,-52.720877)"
+       d="M -640,452.36218 C -638.99723,453.7479 -641.37319,454.39756 -642.30315,454.02885 C -644.8233,453.02967 -644.70673,449.61518 -643.33333,447.75588 C -640.87665,444.43004 -635.93894,444.78594 -633.09055,447.36218 C -628.91042,451.14292 -629.5302,457.78036 -633.33333,461.57479 C -638.40231,466.63216 -646.79093,465.73623 -651.51576,460.69552 C -657.46147,454.3523 -656.2839,444.19098 -650,438.54328 C -642.38936,431.70315 -630.44426,433.16516 -623.87794,440.69551 C -616.13977,449.56978 -617.8878,463.30512 -626.66666,470.78739 C -636.80221,479.42597 -652.33191,477.39093 -660.72836,467.36219 C -670.26894,455.96689 -667.94625,438.64005 -656.66667,429.33067 C -644.01268,418.88695 -624.88674,421.49773 -614.66534,434.02884 C -603.31764,447.94076 -606.21683,468.86725 -620,480"
+       sodipodi:t0="0"
+       sodipodi:argument="-17.90518"
+       sodipodi:radius="34.115231"
+       sodipodi:revolution="3"
+       sodipodi:expansion="1"
+       sodipodi:cy="452.36218"
+       sodipodi:cx="-640"
+       id="path3301"
+       style="fill:none;fill-rule:evenodd;stroke:#ff0000;stroke-width:1.71052325;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       sodipodi:type="spiral"
+       inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_extraction.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
+    <path
+       id="path3303"
+       d="M -659.6,832.86218 L -619.6,672.86218"
+       style="fill:none;fill-rule:evenodd;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_extraction.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
+    <g
+       id="g2438"
+       transform="matrix(0,1,-1,0,-219.6113,1123.8189)"
+       style="fill:#808080"
+       inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_extraction.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100">
+      <path
+         inkscape:export-ydpi="100"
+         inkscape:export-xdpi="100"
+         inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_extraction.png"
+         transform="matrix(0,1,-1,0,-31.456727,1000.3887)"
+         d="M -500,420 L -471.97353,468.54327 L -528.02647,468.54327 L -500,420 z"
+         inkscape:randomized="0"
+         inkscape:rounded="0"
+         inkscape:flatsided="true"
+         sodipodi:arg2="-0.52359878"
+         sodipodi:arg1="-1.5707963"
+         sodipodi:r2="16.181091"
+         sodipodi:r1="32.362183"
+         sodipodi:cy="452.36218"
+         sodipodi:cx="-500"
+         sodipodi:sides="3"
+         id="path3287"
+         style="opacity:1;fill:#808080;fill-opacity:1;stroke:#ffffff;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         sodipodi:type="star" />
+      <rect
+         inkscape:export-ydpi="100"
+         inkscape:export-xdpi="100"
+         inkscape:export-filename="/home/arnaud/Arnaud/1_Stage/rapport/images/components_extraction.png"
+         y="492.36218"
+         x="-540"
+         height="20"
+         width="60"
+         id="rect3289"
+         style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+  </g>
+</svg>
