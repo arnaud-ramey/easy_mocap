@@ -39,7 +39,8 @@ ________________________________________________________________________________
 
 How to use the program
 ________________________________________________________________________________
-To display the help, just launch in a terminal .
+To display the help, just launch in a terminal:
+$ ./build/test_easy_mocap -g -v samples/motion.MPG
 It will display the help of the program.
 
 Keys:

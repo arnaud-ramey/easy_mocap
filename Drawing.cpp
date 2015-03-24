@@ -136,7 +136,7 @@ static void draw_background() {
 	glColor3f(0, 1, 0); // green
 	int diam = 600;
 	int y_floor = -110;
-	load_texture("grass.bmp", TEX_UNIT_1);
+        load_texture("grass.bmp", TEX_UNIT_1);
 	glBegin(GL_QUADS);
 	glVertex3f(-diam, y_floor, -diam);
 	glTexCoord2d(0, 0);
@@ -184,7 +184,7 @@ static void draw_background() {
 
 	// draw the dog
 	if (!dog) {
-		dog = new Hero("rtg/dog.rtg");
+                dog = new Hero(EASY_MOCAP_PATH "rtg/dog.rtg");
 		int x = -400;
 		int z = -60;
 		dog->setPos(x, y_floor, z, 0);
@@ -347,7 +347,7 @@ static Hero* get_hero_by_name(string filename) {
 	if (index == -1) {
 		// create filename
 		ostringstream filename_full;
-		filename_full << "rtg/" << filename;
+                filename_full << EASY_MOCAP_PATH "rtg/" << filename;
 
 		// display
 		cout << "Hero missing ! '" << filename_full.str() << "'. Loading it !"

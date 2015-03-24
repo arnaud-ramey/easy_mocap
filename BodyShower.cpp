@@ -97,8 +97,9 @@ void draw_scene() {
 
     draw_body();
 
-    if (SAVE_IMAGES)
-        screenShot();
+#if SAVE_IMAGES
+    screenShot();
+#endif
 }
 
 void display() {
@@ -131,8 +132,9 @@ void display() {
 
 void myExit() {
     cout << endl << endl << "myExit()" << endl;
-    if (SAVE_IMAGES)
-        screenShot_clean();
+#if SAVE_IMAGES
+    screenShot_clean();
+#endif
 }
 
 void start_bodyshower(Human* vb, int w /*= DEFAULT_OPENGL_WIDTH*/, int h /*= DEFAULT_OPENGL_HEIGHT*/) {

@@ -1,0 +1,11 @@
+/*!
+* \file easy_mocap_path.h.in
+* A CMake generated file for compiling otions
+* \date 11/2014
+* \author Arnaud Ramey
+*/
+#ifndef EASY_MOCAP_PATH_H
+
+#define EASY_MOCAP_PATH       "@PROJECT_SOURCE_DIR@/"
+
+#endif /* EASY_MOCAP_PATH_H */

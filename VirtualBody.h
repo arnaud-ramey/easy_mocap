@@ -8,7 +8,7 @@
 #ifndef VIRTUALBODY_H_
 #define VIRTUALBODY_H_
 
-#define SAVE_IMAGES             1
+#define SAVE_IMAGES             0 // set to one to save images
 #define DEFAULT_OPENGL_WIDTH    800
 #define DEFAULT_OPENGL_HEIGHT   600
 #define MIN_COMP_SIZE           200 // pixels

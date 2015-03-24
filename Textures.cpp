@@ -1,11 +1,13 @@
-/*
+/*!
  * Textures.cpp
  *
  *  Created on: Jan 24, 2010
  *      Author: arnaud
  *
  * textures and co
- */"
+ */
+#include "easy_mocap_path.h"
+
 class Tex {
 public:
         string filename;
@@ -133,7 +135,7 @@ void load_texture(const char* filename, int idTexUnit) {
 
                 // create filename
                 ostringstream filename_full;
-                filename_full << "textures/" << filename;
+                filename_full << EASY_MOCAP_PATH "textures/" << filename;
 
                 // display
                 cout << "*** Texture required !!!" << endl;
