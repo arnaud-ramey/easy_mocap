@@ -23,7 +23,7 @@ inline DisjointSets ImageUtils::disjointSets(const IplImage* img,
 	// get the image size
 	CvRect boundaries = cvGetImageROI(img);
 	// the value of the current pixel and its neighbours
-	bool is_curr_non_null, is_left_OK, is_up_OK;
+  bool is_curr_non_null, is_left_OK = true, is_up_OK = true;
 	uchar curr_value;
 	//	cout << "Time 010:" << ((double)cvGetTickCount() - timer) / freq << endl;
 

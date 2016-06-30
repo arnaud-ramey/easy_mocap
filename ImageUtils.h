@@ -14,9 +14,10 @@
 using namespace std;
 
 // openCV imports
-#include <cv.h>
-#include <cvaux.h>
-#include <highgui.h>
+#include "opencv2/core/core.hpp"
+#include <opencv/cv.h>
+#include <opencv/cvaux.h>
+#include <opencv/highgui.h>
 
 #include "DisjointSets.h"
 
@@ -51,12 +52,12 @@ public:
 };
 
 static const CvScalar predefined_colors[21] = { CV_RGB(255,0,0),
-		CV_RGB(0,0,255), CV_RGB(255,128,0), CV_RGB(255,255,0),
-		CV_RGB(128,255,0), CV_RGB(0,255,0), CV_RGB(0,255,128),
-		CV_RGB(0,255,255), CV_RGB(0,128,255), CV_RGB(128,0,255),
-		CV_RGB(255,0,255), CV_RGB(255,0,128), CV_RGB(204,0,102),
-		CV_RGB(153,0,0), CV_RGB(153,77,0), CV_RGB(153,153,0),
-		CV_RGB(77,153,0), CV_RGB(153,153,0), CV_RGB(0,77,153),
-		CV_RGB(77,0,153), CV_RGB(153,0,153) };
+    CV_RGB(0,0,255), CV_RGB(255,128,0), CV_RGB(255,255,0),
+    CV_RGB(128,255,0), CV_RGB(0,255,0), CV_RGB(0,255,128),
+    CV_RGB(0,255,255), CV_RGB(0,128,255), CV_RGB(128,0,255),
+    CV_RGB(255,0,255), CV_RGB(255,0,128), CV_RGB(204,0,102),
+    CV_RGB(153,0,0), CV_RGB(153,77,0), CV_RGB(153,153,0),
+    CV_RGB(77,153,0), CV_RGB(153,153,0), CV_RGB(0,77,153),
+    CV_RGB(77,0,153), CV_RGB(153,0,153) };
 
 #endif /* IMAGEUTILS_H_ */

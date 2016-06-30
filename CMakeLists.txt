@@ -10,7 +10,8 @@ find_package(JPEG REQUIRED)
 find_package(OpenCV REQUIRED)
 find_package(OpenGL REQUIRED)
 find_package(Threads REQUIRED)
-INCLUDE_DIRECTORIES(${PROJECT_SOURCE_DIR} ${PROJECT_BINARY_DIR})
+INCLUDE_DIRECTORIES(${PROJECT_SOURCE_DIR} ${PROJECT_BINARY_DIR}
+                    ${OpenCV_INCLUDE_DIRS})
 CONFIGURE_FILE("${PROJECT_SOURCE_DIR}/easy_mocap_path.h.in"
                "${PROJECT_BINARY_DIR}/easy_mocap_path.h")
 

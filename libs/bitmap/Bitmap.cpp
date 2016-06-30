@@ -59,7 +59,7 @@ bool Bitmap::loadBMP(const char *file) {
 	}
 
 	//read in the entire BITMAPFILEHEADER
-	int dummy = fread(&bmfh, sizeof(BitmapFileHeader), 1, in);
+  int dummy = fread(&bmfh, sizeof(BitmapFileHeader), 1, in);
 	cout << "sizeof(BitmapFileHeader)=" << sizeof(BitmapFileHeader) << endl;
 	//check for the magic number that says this is a bitmap
 	if (bmfh.bfType != BITMAP_MAGIC_NUMBER) {
