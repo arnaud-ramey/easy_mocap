@@ -7,6 +7,7 @@ You need the following libraries before compiling :
  * OpenCV ( sudo apt-get install libopencv-dev ),
  * OpenGL ( sudo apt-get install gl-dev ),
  * GLUT   ( sudo apt-get install freeglut3-dev ).
+ * XMU    ( sudo apt-get install libxmu-dev ).
 
 ________________________________________________________________________________
 
