@@ -5,7 +5,6 @@ ________________________________________________________________________________
 You need the following libraries before compiling :
  * cmake  ( sudo apt-get install cmake ),
  * OpenCV ( sudo apt-get install libopencv-dev ),
- * OpenGL ( sudo apt-get install  ),
  * GLUT   ( sudo apt-get install freeglut3-dev ).
  * XMU    ( sudo apt-get install libxmu-dev ).
 
