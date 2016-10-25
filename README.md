@@ -2,6 +2,8 @@
                   |      easy_mocap      |
                   +----------------------+
 
+[![Build Status](https://travis-ci.org/arnaud-ramey/easy_mocap.svg)](https://travis-ci.org/arnaud-ramey/easy_mocap)
+
 The aim is to be able to perform some motion capture with only a simple
 camera. The output of the motion capture (the detected pose of the human
 body) is here used to animate a OpenGL character.
