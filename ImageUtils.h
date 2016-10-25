@@ -15,39 +15,37 @@ using namespace std;
 
 // openCV imports
 #include "opencv2/core/core.hpp"
-#include <opencv/cv.h>
-#include <opencv/cvaux.h>
-#include <opencv/highgui.h>
+#include "opencv2/imgproc/imgproc.hpp"
 
 #include "DisjointSets.h"
 
 class ImageUtils {
 public:
-	ImageUtils();
-	virtual ~ImageUtils();
+  ImageUtils();
+  virtual ~ImageUtils();
 
-	static void reset_timer();
-	static double get_timer();
-	static string infosImage(const IplImage* i);
+  static void reset_timer();
+  static double get_timer();
+  static string infosImage(const IplImage* i);
 
-	static inline DisjointSets disjointSets(const IplImage* img,
-			struct DisjointSets::Node* node_best = new DisjointSets::Node(1));
+  static inline DisjointSets disjointSets(const IplImage* img,
+      struct DisjointSets::Node* node_best = new DisjointSets::Node(1));
 
-	static void connectedComponents(const IplImage* img,
-			vector<vector<CvPoint> >* componentsPoints,
-			vector<CvRect>* boundingBoxes);
+  static void connectedComponents(const IplImage* img,
+      vector<vector<CvPoint> >* componentsPoints,
+      vector<CvRect>* boundingBoxes);
 
-	static CvScalar color(int i);
-	static CvScalar hue2rgb(float hue);
-	static void convert_hue_to_RGB(const IplImage* src, IplImage* dest);
-	static void extractHue_and_convertRGB(const IplImage* src, IplImage* dest);
+  static CvScalar color(int i);
+  static CvScalar hue2rgb(float hue);
+  static void convert_hue_to_RGB(const IplImage* src, IplImage* dest);
+  static void extractHue_and_convertRGB(const IplImage* src, IplImage* dest);
 
-	static void drawListOfPoints(CvArr* img, vector<CvPoint>* pts,
-			CvScalar color);
-	static void drawPoint(CvArr* img, CvPoint p, CvScalar color, int thickness =
-			1);
-	static void drawBox2D(CvArr* img, CvBox2D &box, CvScalar color,
-			int thickness = 1);
+  static void drawListOfPoints(CvArr* img, vector<CvPoint>* pts,
+      CvScalar color);
+  static void drawPoint(CvArr* img, CvPoint p, CvScalar color, int thickness =
+      1);
+  static void drawBox2D(CvArr* img, CvBox2D &box, CvScalar color,
+      int thickness = 1);
 
 };
 
