@@ -4,7 +4,8 @@ compiler:
   - gcc
 
 before_install:
-  # intall deps
+  # install deps
+  - sudo apt-get install -y cmake libopencv-dev gl-dev freeglut3-dev libxmu-dev
 
 script: # compile
   - mkdir build
